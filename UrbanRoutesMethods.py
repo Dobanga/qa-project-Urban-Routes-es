@@ -141,7 +141,7 @@ class UrbanRoutesPage:
         view_slide_button = self.driver.find_element(*self.locators.slide_button_towel_paper)
         self.driver.execute_script("arguments[0].scrollIntoView();", view_slide_button)
         view_slide_button.click()
-        WebDriverWait(self.driver, 5).until(expected_conditions.visibility_of_element_located(self.locators.slide_button_towel_paper))
+        WebDriverWait(self.driver, 5).until(expected_conditions.element_to_be_clickable(self.locators.slide_button_towel_paper))
 
     #Metodo para dar click al plus button del requisito "helado" dos veces
     def click_plus_button_icecream(self):
@@ -154,7 +154,7 @@ class UrbanRoutesPage:
 
     #Metodo para regresar si el estado del slide button
     def get_switch_button_status(self):
-        return self.driver.find_element(*self.locators.slide_button_towel_paper).is_selected()
+        return self.driver.find_element(*self.locators.confirmation_slider_button_towel_paper).is_selected()
 
     #Medotos para dar click al boton reservar el taxi
     def click_button_request_taxi(self):
@@ -168,7 +168,7 @@ class UrbanRoutesPage:
 
     #Metodo para esperar pa informacion del conductor
     def wait_driver_info(self):
-        WebDriverWait(self.driver, 30).until(expected_conditions.visibility_of_element_located(self.locators.order_number))
+        WebDriverWait(self.driver, 40).until(expected_conditions.visibility_of_element_located(self.locators.order_number))
 
     #Metodo que regresar el nombre del primer elemento que se encuentra en la informacion del conductor
     def check_driver_info(self):

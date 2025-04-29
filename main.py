@@ -2,6 +2,7 @@ import data
 from selenium import webdriver
 from UrbanRoutesMethods import UrbanRoutesPage
 
+
 class TestUrbanRoutes:
 
     driver = None

@@ -18,3 +18,11 @@ Se compone de los archivos:
 Una vez descarga la libreria Pytest, tenemos ir a las opciones de ejecuccion y edit configuration.
 Daremos click en add new configuration, seleccionaremos Pytest, cambiaremos el scrip a custom, aplicamos los cambios.
 con estos hecho ya podemos simplemente ejecutar el proyecto ver el resultado de las pruebas.
+
+Tambien se puede hacer uso del comando 'pytest', como la consonala inicia en una carpeta antes podemos realizar los siguientes comandos:
+1. 'cd qa-project-Urban_Routes_es' 
+2. 'pytest main.py'
+
+O en un solo paso:
+1. 'pytest qa-project-Urban_Routes_es/main.py'
+
