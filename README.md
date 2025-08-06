@@ -26,3 +26,6 @@ Tambien se puede hacer uso del comando 'pytest', como la consonala inicia en una
 O en un solo paso:
 1. 'pytest qa-project-Urban_Routes_es/main.py'
 
+# En conclusion
+Al ejecutar las pruebas automatizadas se puede verificar que la funcion a probar cumple con los requisitos!
+
