@@ -9,6 +9,7 @@ El objetivo de este proyecto es probar la funcionalidad de pedir el servicio de 
 - Lenguaje de programacion python
 - Selenium webdriver
 - Pytest packages
+
 Se compone de los archivos:
 - data.py: este archivo contiene todos los valores de pruebas
 - GetPhoneCode: este archivo contiene el codigo para obtener el phone code requerido para las pruebas
